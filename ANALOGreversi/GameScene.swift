@@ -16,8 +16,6 @@ enum StoneLevel :CGFloat {
 
 class GameScene: SKScene {
 
-    
-    
     override func didMove(to view: SKView) {
 
 //        let backGround = SKSpriteNode(imageNamed:"Board")
@@ -38,7 +36,13 @@ class GameScene: SKScene {
 //        backNode.position = CGPoint(x:0, y:0)
 //        backNode.zPosition = StoneLevel.back.rawValue
 //        addChild(backNode)
-
+        self.backgroundColor = UIColor.gray
+        let board = SKSpriteNode(imageNamed: "Board")
+        board.position = CGPoint(x: 0 , y: 0)
+        board.zPosition = -1
+        board.size = CGSize(width: 750, height: 750)
+        self.addChild(board)
+        
         let buttonBlack = SKSpriteNode(imageNamed: "image_black")
         buttonBlack.position = CGPoint(x:0, y:480)
         buttonBlack.zPosition = 201
@@ -103,11 +107,33 @@ class GameScene: SKScene {
                         addChild(white)
                     }
                     if self.atPoint(location).name == "buttonNewGame"{
-                        addChild(white)
-                        addChild(black)
-                        self.removeChildren(in: [black, white])
-
-                        print("NewGame")
+                        self.removeAllChildren()
+                        
+                        self.backgroundColor = UIColor.gray
+                        
+                        let board = SKSpriteNode(imageNamed: "Board")
+                        board.position = CGPoint(x: 0 , y: 0)
+                        board.zPosition = -1
+                        board.size = CGSize(width: 750, height: 750)
+                        self.addChild(board)
+                        
+                        let buttonBlack = SKSpriteNode(imageNamed: "image_black")
+                        buttonBlack.position = CGPoint(x:0, y:480)
+                        buttonBlack.zPosition = 201
+                        buttonBlack.name = "buttonBlack"
+                        self.addChild(buttonBlack)
+                        
+                        let buttonWhite = SKSpriteNode(imageNamed: "image_white")
+                        buttonWhite.position = CGPoint(x:0, y:-480)
+                        buttonWhite.zPosition = 201
+                        buttonWhite.name = "buttonWhite"
+                        self.addChild(buttonWhite)
+                        
+                        let buttonNewGame = SKSpriteNode(imageNamed: "image_NewGame")
+                        buttonNewGame.position = CGPoint (x:250, y:-550)
+                        buttonNewGame.zPosition = 201
+                        buttonNewGame.name = "buttonNewGame"
+                        self.addChild(buttonNewGame)
                         
                     }
                     

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04C27D772164F041006C972E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C27D762164F041006C972E /* AppDelegate.swift */; };
-		04C27D792164F041006C972E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04C27D782164F041006C972E /* GameScene.sks */; };
 		04C27D7B2164F041006C972E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04C27D7A2164F041006C972E /* Actions.sks */; };
 		04C27D7D2164F041006C972E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C27D7C2164F041006C972E /* GameScene.swift */; };
 		04C27D7F2164F041006C972E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C27D7E2164F041006C972E /* GameViewController.swift */; };
@@ -18,6 +17,7 @@
 		04C27D922164F042006C972E /* ANALOGreversiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C27D912164F042006C972E /* ANALOGreversiTests.swift */; };
 		04C27D9D2164F042006C972E /* ANALOGreversiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C27D9C2164F042006C972E /* ANALOGreversiUITests.swift */; };
 		04C27DAB2164F38E006C972E /* stone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C27DAA2164F38E006C972E /* stone.swift */; };
+		04F4A3D5216DF6E400D1AFAA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04F4A3D4216DF6E400D1AFAA /* GameScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 /* Begin PBXFileReference section */
 		04C27D732164F041006C972E /* ANALOGreversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANALOGreversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C27D762164F041006C972E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04C27D782164F041006C972E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		04C27D7A2164F041006C972E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		04C27D7C2164F041006C972E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		04C27D7E2164F041006C972E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		04C27D9C2164F042006C972E /* ANALOGreversiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANALOGreversiUITests.swift; sourceTree = "<group>"; };
 		04C27D9E2164F042006C972E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C27DAA2164F38E006C972E /* stone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stone.swift; sourceTree = "<group>"; };
+		04F4A3D4216DF6E400D1AFAA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = ../GameScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				04C27D762164F041006C972E /* AppDelegate.swift */,
-				04C27D782164F041006C972E /* GameScene.sks */,
+				04F4A3D4216DF6E400D1AFAA /* GameScene.sks */,
 				04C27D7A2164F041006C972E /* Actions.sks */,
 				04C27D7C2164F041006C972E /* GameScene.swift */,
 				04C27DAA2164F38E006C972E /* stone.swift */,
@@ -242,7 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C27D822164F041006C972E /* Main.storyboard in Resources */,
-				04C27D792164F041006C972E /* GameScene.sks in Resources */,
+				04F4A3D5216DF6E400D1AFAA /* GameScene.sks in Resources */,
 				04C27D842164F042006C972E /* Assets.xcassets in Resources */,
 				04C27D872164F042006C972E /* LaunchScreen.storyboard in Resources */,
 				04C27D7B2164F041006C972E /* Actions.sks in Resources */,
